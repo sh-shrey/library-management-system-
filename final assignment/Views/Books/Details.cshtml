@@ -1,0 +1,74 @@
+﻿@model final_assignment.Models.book
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>book</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.book_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.book_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.about)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.about)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.pages)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pages)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.edition)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.edition)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.author.author_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.author.author_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.category.category_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.category.category_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.publisher.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.publisher.name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="fbab2ee96164427f8bc024b0b7103f05" Name="Diagram1">
+        <EntityTypeShape EntityType="Database1Model.student" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Database1Model.author" Width="1.5" PointX="3.25" PointY="0.875" />
+        <EntityTypeShape EntityType="Database1Model.book" Width="1.5" PointX="5.625" PointY="1" />
+        <EntityTypeShape EntityType="Database1Model.category" Width="1.5" PointX="3.25" PointY="2.625" />
+        <EntityTypeShape EntityType="Database1Model.publisher" Width="1.5" PointX="9.125" PointY="3.75" />
+        <AssociationConnector Association="Database1Model.FK_book_ToTable_1" />
+        <AssociationConnector Association="Database1Model.FK_book_ToTable" />
+        <AssociationConnector Association="Database1Model.FK_book_ToTable_2" />
+        <EntityTypeShape EntityType="Database1Model.issuebook" Width="1.5" PointX="0.75" PointY="3" />
+        <EntityTypeShape EntityType="Database1Model.master" Width="1.5" PointX="4.125" PointY="7.125" />
+        <EntityTypeShape EntityType="Database1Model.returnbook" Width="1.5" PointX="11.375" PointY="3.625" />
+        <EntityTypeShape EntityType="Database1Model.userrole" Width="1.5" PointX="6.25" PointY="7" />
+        <AssociationConnector Association="Database1Model.FK_userrole_ToTable" />
+        <EntityTypeShape EntityType="Database1Model.User" Width="1.5" PointX="8.375" PointY="0.75" />
+        <EntityTypeShape EntityType="Database1Model.Urole" Width="1.5" PointX="10.625" PointY="0.875" />
+        <AssociationConnector Association="Database1Model.FK_Uroles_ToTable" />
+        <AssociationConnector Association="Database1Model.FK_userrole_ToTable_1" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

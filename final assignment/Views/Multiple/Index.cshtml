@@ -1,0 +1,61 @@
+﻿@model IEnumerable<final_assignment.Models.Multipleclass1>
+@{
+    ViewBag.Title = "Index";
+    //Layout = "~/Views/Shared/loginStyle.cshtml";
+}
+    <style>
+        body {
+            background-image: url('/AppFile/try1.jpg');
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr {
+            background-color: #f2f2f2;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+<center>
+   
+    <h2>Details</h2>
+    <table class="table">
+        <tr>
+            <td>
+                student id
+            </td>
+            <td>Student name</td>
+            <td> book name</td>
+            <td> issuedate</td>
+            <td> retundate</td>
+           
+        </tr>
+        @foreach (var item in Model)
+        {
+    <tr>
+        <td>@item.studentdetails.name</td>
+        <td>@item.issuebookdetails.m_id</td>
+        <td>@item.issuebookdetails.book_id</td>
+        <td>@item.issuebookdetails.issuedate</td>
+        <td>@item.issuebookdetails.returndate</td>
+
+       
+    </tr>
+        }
+    </table>
+</center>
+
